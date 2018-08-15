@@ -1,11 +1,12 @@
-# spx2wav.jar 使用
+# spx2wav.jar 使用说明 [仅支持Linux环境]
 功能介绍：将.speex文件解码为*.wav文件
 
 ## 环境：
 1. Linux
 2. JDK 1.6
 
-## 步骤：
+## 配置：
+
 ### 1. 安装libspeex
 
 > 从 https://github.com/wintterHub/spx2wav.git 的resources目录下载 speex-1.2.0.tar.gz
@@ -24,13 +25,15 @@
 
 > make -f makefile-linux install
 
-### 3. 使用方式 [使用时报错，请查看下方“常见问题”#2]
+## 使用方式： [若使用时报错，请查看下方“常见问题”#2]
 
-> Java类中调用示例: SpeexUtils.decode("a.speex", "a.wav");
+> 从 https://github.com/wintterHub/spx2wav.git 的resources目录中获得spx2wav.jar
 
-> 命令测试示例: java -jar spx2wav.jar a.speex a.wav
+> Java类中调用示例：SpeexUtils.decode("a.speex", "a.wav");
+
+> 命令测试示例：java -jar spx2wav.jar a.speex a.wav
     
-### 4. 测试文件
+### 测试文件
 
 > 从 https://github.com/wintterHub/spx2wav.git 的resources目录中获取以下两个speex音频文件进行测试
 
